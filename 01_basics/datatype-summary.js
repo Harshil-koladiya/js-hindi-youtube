@@ -40,3 +40,34 @@ const myFunction = function(){
 
 // non-primitive ma badha no type object j ave
 // function => object function ave
+
+
+//**********************memory-types*******************
+
+// 1.stack memory(primitive)
+// 2.Heap memory(non-primitive)
+
+// stack ma copy male apne je change karvi te copy ma thay original ma no thay
+
+let myYoutubename = "harshilkoladiya"
+
+let anotherName = myYoutubename
+anotherName = "cahiaurcode"
+
+console.log(myYoutubename); // =>harshilkoladiya
+console.log(anotherName); // =>chaiaurcode
+
+
+
+//heap ma apne refrence male jethi je change thay te original ma thay
+
+let userOne = {
+    email : "user@gmail.com",
+    upi : "user@ybl"
+}
+
+let userTwo = userOne
+ userTwo.email ="harshil@gmail.com"
+
+ console.log(userOne.email); // =>harshil@gmail.com
+ console.log(userTwo.email); // =>harshil@gmail.com
