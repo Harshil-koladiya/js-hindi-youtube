@@ -36,5 +36,10 @@ console.log(hundreds.toLocaleString('en-IN')); // =======> 10,00,000
 
 
 console.log(Math.random());  // => value 0 to 1 ni vache ave 
-console.log(Math.random()*10); // => 0 to 10 ni vache ave
-console.log(Math.random()*10 + 1); // => 1 to 10 ni vache ave
+console.log(Math.floor((Math.random()*10) + 1)); // => 1 to 10 ni vache ave
+
+
+const min = 10
+const max = 20
+
+console.log(min + Math.floor(Math.random() * (max - min + 1 )));
