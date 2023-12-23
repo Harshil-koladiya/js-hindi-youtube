@@ -21,4 +21,39 @@ const regularUser = {
 }
  console.log(regularUser.fullname.userfullname.firstname); // => harshil
 
- 
+const obj1 ={1:"a", 2:"b"}
+const obj2 ={3:"a", 4:"b"}
+
+// const obj3 = {obj1, obj2} // => {obj1: {'1':'a', '2':'b'}, obj2:{'3':'a','4':'b'}}
+
+// const obj3 = Object.assign({}, obj1, obj2) //=>{'1':'a', '2':'b','3':'a', '4':'b'}
+
+const obj3 = {...obj1, ...obj2} // =>{'1':'a', '2':'b','3':'a', '4':'b'}
+console.log(obj3);
+
+
+const users =[
+    {
+        id: 1,
+        email:"harshil11@.com"
+    },
+    {
+        id: 2,
+        email:"harshil21@.com"
+    },
+    {
+        id: 3,
+        email:"harshil31@.com"
+    },
+]
+
+console.log(users[1].email); // =>harshil21@.com
+
+console.log(tinderuser); // =>{id : "123abc",name : "harhsil,isLoggedIn : false}
+
+console.log(Object.keys(tinderuser)); // =>['id', 'name', 'isLoggedIn]
+console.log(Object.values(tinderuser)); // =>['123abc','harshil', false]
+console.log(Object.entries(tinderuser)); // =>[['id', '123abc'],['name','harhsil'],['isLoggedIn', false]]
+
+
+console.log(tinderuser.hasOwnProperty('isLoggedIn')); // =>true
