@@ -66,7 +66,19 @@ const course = {
 
 // course.courseInstructor // =>method 1
 
-const {courseInstructor: Instructor} = course // =>method 2
-
+// const {courseInstructor} = course // =>method 2
 // console.log(courseInstructor);
+
+const {courseInstructor: Instructor} = course // =>motu name no lakhvu hoy to apne tene biju short name api sakaye
 console.log(Instructor);
+
+// {
+//     "name": "harshil",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+
+[
+    {},
+    {}
+]
