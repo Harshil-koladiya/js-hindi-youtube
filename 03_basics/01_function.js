@@ -52,7 +52,7 @@ loginUserMessage("harshil") // => kay ans nay ave kemke function khali value ret
 
 // ********** imp case ********** 
 
-// kay arrgument ke valu j pass no karvi tyare
+// kay arrgument ke value j pass no karvi tyare
 // console.log(loginUserMessage()); // => undefined just logged in
 
 // after applying if else
