@@ -21,3 +21,27 @@
 
 // console.log(`user power: ${power}`); // =>gives scope error(power is not defined)
 
+
+// const balance = 1000
+
+// if (balance < 500) {
+//     console.log("less than 500");
+// }else if(balance < 750) {
+//     console.log("less than 750");
+// }else{
+//     console.log("less than 1200");
+// }
+
+
+const userLoggedIn = true
+const debitCard = true
+const loggedInFromGoogle = false
+const loggedInFromEmail = true
+
+if (userLoggedIn && debitCard ) {
+    console.log("Allow to buy course");
+}
+
+if ( loggedInFromGoogle || loggedInFromEmail ) {
+    console.log("user logged in");
+}
