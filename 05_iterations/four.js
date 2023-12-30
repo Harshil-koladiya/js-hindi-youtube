@@ -14,7 +14,8 @@ for (const key in  myObject) {
 
 const programming = ["js","rb","py","java","cpp"]
 for (const key in programming) {
-    console.log(programming[key]);
+    console.log(key); // => 0, 1, 2, 3, 4
+    console.log(programming[key]); // => js, rb, py, java, cpp
 }
 
 
@@ -26,5 +27,5 @@ for (const key in programming) {
 // map.set('IN',"india")
 
 // for (const key in map) {
-//     console.log(key);
-// }
+//     console.log(key); // =>map is not iterable
+// } 
