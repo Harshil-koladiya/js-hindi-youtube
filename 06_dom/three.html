@@ -8,4 +8,24 @@
 <body>
     
 </body>
+<script>
+    const div = document.createElement('div')
+    console.log(div); // => <div></div>
+    div.className = "main" 
+    div.id = Math.round(Math.random() * 10 + 1)
+    div.setAttribute("title","generated title") // => <div class="main" id ="9" title="generated title"></div>
+
+    div.style.backgroundColor = "green"
+    div.style.padding = "12px"
+    div.innerText = "Chai aur Code"
+ 
+    // method-2 to add text
+    const addText = document.createTextNode("Chai aur Code")
+    div.appendChild(addText) // => div tag ni ander text ne add karva ma ave che
+
+    document.body.appendChild(div) // atyr sudhi memory ma hatu aa je div ma change karya te  pan tene console ma jova mate aa trick no use thay  jema document ma body tag ni andar div ne add karvama ave che 
+
+
+
+</script>
 </html>
