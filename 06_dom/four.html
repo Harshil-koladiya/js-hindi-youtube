@@ -20,5 +20,20 @@
     addLanguage("python")
     addLanguage("typescript")
 
+//optimize approach and recommanded for huge project 
+
+    function addOptiLanguage(langName) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+
+    }
+    addOptiLanguage('golang')
+
+//Edit
+    const secondLang = document.querySelector("li:nth-child(2)") 
+       
+
+
 </script>
 </html>
