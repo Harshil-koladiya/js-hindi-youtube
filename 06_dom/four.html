@@ -31,8 +31,20 @@
     addOptiLanguage('golang')
 
 //Edit
-    const secondLang = document.querySelector("li:nth-child(2)") 
+
+    const secondLang = document.querySelector("li:nth-child(2)")  // 1. javascript, 2.python mate python selecte thase
+    // secondLang.innerHTML = "Mojo"    // M-1 
+ 
+  // optimize way
+    // const newLi = document.createElement('li')  // M-2
+    // newLi.textContent = "Mojo"
+    // secondLang.replaceWith(newLi)
        
+
+  //remove
+     const lastLang = document.querySelector('li:last-child')
+     lastLang.remove()
+
 
 
 </script>
